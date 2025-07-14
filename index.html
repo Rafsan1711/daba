@@ -51,7 +51,7 @@
   const game = new Chess();
   const statusEl = document.getElementById("status");
 
-  const stockfish = new Worker("https://stockfish.online/stockfish.js");
+  const stockfish = new Worker("https://cdn.jsdelivr.net/gh/official-stockfish/Stockfish/src/stockfish.js");
 
   function makeBotMove() {
     stockfish.postMessage("position fen " + game.fen());
